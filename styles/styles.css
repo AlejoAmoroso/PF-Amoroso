@@ -1,0 +1,174 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General */
+
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    background-color: #e9ecef;
+}
+
+/* Nav */
+
+.navbar-brand__logo {
+    height: 60px
+}
+
+.nav-link {
+    margin-left: 100px;
+}
+
+.navbar {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.navbar-top {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width:1201px) {
+    .search-icon {
+        visibility: hidden;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Comienzo del Index */
+
+/* Carousel */
+
+.carousel-img {
+    height: 50vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+/* .carousel-margin {
+    margin-top: 30px;
+} */
+
+@media (max-width:991px) {
+    .carrousel-hidden {
+        display: none;
+    }
+}
+
+.carousel-caption {
+    font-family: 'Jost', sans-serif;
+   font-size: 1.5rem;
+   color: white;
+   top: 0;
+   margin-top: 10rem;
+}
+
+.carousel-title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.carousel-desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media (max-width: 482px) {
+    .carousel-title {
+        font-size: 2.5rem;
+    }
+
+    .carousel-desc {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption {
+        margin-top: 11rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .carousel-title {
+        font-size: 2rem;
+    }
+
+    .carousel-desc {
+        font-size: 1rem;
+    }
+
+    .carousel-caption {
+        margin-top: 12rem;
+    }
+}
+
+@media (max-width: 250px) {
+     .carousel-title {
+        font-size: 1.5rem;
+    }
+
+    .carousel-desc {
+        font-size: 0.8rem;
+    }
+}
+
+/* Hero */
+
+.hero {
+    border-radius: 20px;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.hero-bottom {
+    max-width: 500px;
+    margin-left: 50px;
+}
+
+.hero-heading {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.hero-main {
+    background-color: white;
+    height: 50vh
+}
+
+.hero-main-logo {
+    filter: grayscale(20%);
+    width: 45%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.hero-main-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
