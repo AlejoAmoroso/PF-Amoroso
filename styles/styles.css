@@ -146,7 +146,6 @@ body {
 
 .hero-bottom {
     max-width: 500px;
-    margin-left: 50px;
 }
 
 .hero-heading {
@@ -161,9 +160,10 @@ body {
 
 .hero-main-logo {
     filter: grayscale(20%);
-    width: 45%;
+    width: 40rem;
     height: 50vh;
     object-fit: cover;
+    display: inline-block;
 }
 
 .hero-main-sub {
@@ -171,4 +171,95 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
+.hero-bottom-hidden {
+    display: none;
+}
+
+@media (max-width: 1398px) {
+    .hero-main-logo {
+        width: 37rem;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero-main-logo {
+        width: 33rem;
+    }
+
+    .hero-heading {
+        font-size: 3.6rem;
+    }
+
+    .hero-bottom {
+        font-size: 0.8rem;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1095px) {
+    .hero-main-logo {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 990px) {
+    .hero-main-logo {
+        width: 35vw;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    .hero-main-logo {
+        object-fit: contain;
+        height: 30vh;
+        width: 20rem;
+    }
+
+}
+
+@media (max-width: 344px) {
+    .hero-main-logo {
+        width: 18rem;
+        height: 20vh;
+    }
+
+    .hero-bottom {
+        max-width: 200px;
+    }
+
+    .hero-top {
+        margin-top: 20px;
+    }
+}
+
+/* Novedades */
+
+.novedades-img {
+   height: 15vh;
+   object-fit: cover;
+   width: 100%;
+   outline: 1px solid black;
+}
+
+.novedades-p {
+    display: inline-block;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    position: absolute;
+    left: 500px;
+    margin-top: 2.7rem;
+}
+
