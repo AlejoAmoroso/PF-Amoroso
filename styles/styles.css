@@ -291,25 +291,61 @@ body {
 
     .hero-main-logo {
         object-fit: cover;
+        }
     }
-}
-
+}   
 /* Novedades */
 
-.novedades-img {
-   height: 15vh;
-   object-fit: cover;
-   width: 100%;
-   outline: 1px solid black;
+/* .novedades-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+    object-fit: contain;
+    gap: 10rem;
+} */
+
+.novedades-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    row-gap: 6rem;
+    flex-wrap: wrap;
 }
 
-.novedades-p {
-    display: inline-block;
-    color: white;
-    font-size: 3rem;
-    font-weight: 400;
-    position: absolute;
-    left: 500px;
-    margin-top: 2.7rem;
+.card-img-top, 
+.card
+ {
+    filter: grayscale(100%);
+    transition-duration: 500ms;
+}
+
+.card-img-top:hover {
+    filter: grayscale(0%);
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    width: 20rem;
+    transition-property: transform;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.3, 1.3);
+    filter: grayscale(0%);
+}
+
+
+
+/* @media (max-width: 1398px) {
+    .novedades-cards {
+        justify-content: space-between;
     }
-}       
+
+    .card {
+        width: 15rem;
+    }
+} */
