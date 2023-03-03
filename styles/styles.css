@@ -10,9 +10,20 @@
 
 body {
     font-family: 'Jost', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #e9ecef;
+    font-weight: 400;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* Nav */
 
@@ -20,13 +31,17 @@ body {
     height: 60px
 }
 
+.navbar-brand {
+    font-weight: 500;
+}
+
 .nav-link {
     margin-left: 100px;
 }
 
 .navbar {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 .nav-link:hover {
@@ -65,10 +80,6 @@ body {
     object-fit: cover;
     filter: brightness(0.5);
 }
-
-/* .carousel-margin {
-    margin-top: 30px;
-} */
 
 @media (max-width:991px) {
     .carrousel-hidden {
@@ -296,6 +307,11 @@ body {
 }   
 /* Novedades */
 
+.ultimos-productos {
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
 /* .novedades-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -365,8 +381,97 @@ body {
     }
 }
 
+/* Seccion starset */
+
+.starset {
+    background-color: white;
+    height: 31.25rem;
+}
+
+.starset-bottom-index-img {
+    object-fit: cover;
+}
+
 /* footer */
 
 .footer {
     background-color: white;
+    font-size: 23px;
+    height: 53rem;
+}
+
+.productos__ul,
+.soporte__ul,
+.descargas__ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.w-us {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 13rem;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.footer-main-title {
+    font-size: 23px;
+    margin-bottom: 1rem;
+}
+
+.footer-main-item {
+    margin-top: 3rem;
+    color: rgb(119, 119, 119);
+}
+
+.breadcrumb {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer-bottom-item {
+    font-size: 30px;
+    margin-bottom: 4rem;
+    color:rgb(83, 83, 83)
+}
+
+.footer-bottom-title {
+    margin-bottom: 2rem;
+}
+
+.footer-main-item, .footer-bottom-item {
+    transition-duration: 500ms;
+}
+
+.footer-main-item:hover, .footer-bottom-item:hover {
+    color: black;
+}
+
+.footer-bottom {
+    border-bottom: 1px solid #ededed;
+}
+
+.footer-copyright {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.copyright {
+    color: rgb(83, 83, 83);
 }
