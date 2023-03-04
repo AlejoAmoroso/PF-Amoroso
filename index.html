@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starset | Index</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo1.png" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/styles.css">
     <!-- FontAwesome -->
@@ -83,7 +85,7 @@
 
         <!-- Carrousel -->
         <div class="container carousel-hidden">
-            <div id="carouselAuto" class="carousel carousel-margin carousel-fade" data-bs-ride="carousel">
+            <div id="carouselAuto" class="carousel carousel-margin" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselAuto" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -159,10 +161,10 @@
 
         <section id="novedades">
             <div class="container mt-5">
-                <h3 class="ultimos-productos">
+                <h3 class="ultimos-productos-heading">
                     Últimos productos
                 </h3>
-                <p>Descubri lo último en auriculares y tecnología Starset.</p>
+                <p class="ultimos-productos-text">Descubri la tecnología más avanzada y el diseño más innovador Starset.</p>
             </div>
             <div class="container mt-5">
                 <div class="novedades-cards container">
@@ -213,11 +215,66 @@
                 </div>
         </section>
 
+        <section id="equipos-slider">
+            <div class="container mt-5">
+                <div class="equipos-heading">
+                    <p>Equipos de eSports con los que hemos colaborado.</p>
+                </div>
+                <div class="equipos-slider-container">
+                    <div class="carousel slide" id="equipos-slider" data-bs-ride="carousel" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active pb-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/9z.webp" alt="9z" class="d-block w-100 equipos-logo">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/furious-gaming.webp" alt="furious gaming" class="d-block w-100 equipos-logo">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/isurus.webp" alt="isurus gaming" class="d-block w-100 equipos-logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item pb-5">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/malvinas-gaming.png" alt="lrv esports" class="d-block w-100 equipos-logo">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/mibr-esports.png" alt="sharks esports" class="d-block w-100 equipos-logo">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="./assets/brand-logos/leviatan-gaming.png" alt="windingo esports" class="d-block w-100 equipos-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="starset-section">
-            <div class="container">
-                <div class="starset d-flex justify-content-center align-items-center">
-                    <img src="./assets/starset-index-bottom.png" alt="ilustracion de mujer usando auriculares starset" class="starset-bottom-index-img">
-                    <p>「La innovación tecnológica ahora al alcance de tus manos.」</p>
+            <div class="container mt-5">
+                <div class="starset">
+                    <img src="./assets/starset-index-bottom.png" alt="ilustracion de mujer usando auriculares starset" class="starset-bottom-index-img text-center">
+                    <p>「Explora la verdadera esencia del arte musical a través de nuestros auriculares de lujo, donde cada nota y cada instrumento se fusionan en una experiencia auditiva única y cautivadora.」</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="starset-link">
+            <div class="container mt-5">
+                <div class="starset-link">
+                    <div class="starset-link-body">
+                        <p class="starset-link-title">starset link</p>
+                        <p class="starset-link-text">Unite a nuestro newsletter para estar al tanto de todas las novedades.</p>
+                        <form action="" class="starset-link-email">
+                            <input type="email" placeholder="Email" id="email" class="starset-link-input">
+                            <input type="submit" class="btn btn-success" value="Suscribirse" placeholder="Suscribirse">
+                        </form> 
+                    </div>
                 </div>
             </div>
         </section>
@@ -236,7 +293,7 @@
                             <li class="footer-main-title">Productos</li>
                             <li><a href="./pages/proyectos.html" class="footer-main-item">Linea Gaming</a></li>
                             <li><a href="./pages/proyectos.html" class="footer-main-item">Linea Audio</a></li>
-                            <li><a href="./pages/proyectos.html" class="footer-main-item">Linea In-ear</a></li>
+                            <li><a href="./pages/proyectos.html" class="footer-main-item">Linea In-Ear</a></li>
                         </ul>
                     </div>
                     <div class="soporte">
@@ -248,7 +305,7 @@
                     </div>
                     <div class="descargas">
                         <ul class="descargas__ul">
-                            <li class="footer-main-title">Descargas</li>
+                            <li class="footer-main-title descargas">Descargas</li>
                             <li><a href="./pages/descargas.html" class="footer-main-item">Drivers</a></li>
                         </ul>
                     </div>

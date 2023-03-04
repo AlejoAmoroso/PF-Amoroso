@@ -46,7 +46,6 @@ a {
 
 .nav-link:hover {
     color: rgb(0, 0, 0);
-    border-bottom: 1px solid black;
 }
 
 .navbar-top {
@@ -60,7 +59,6 @@ a {
     }
 }
 
-
 @media (max-width:1201px) {
     .search-icon {
         visibility: hidden;
@@ -71,6 +69,18 @@ a {
     border: none;
 }
 
+@media (max-width: 376px) {
+    .navbar-top {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 310px) {
+    .navbar-top {
+        font-size: 14px;
+    }
+}
+
 /* Comienzo del Index */
 
 /* Carousel */
@@ -79,12 +89,6 @@ a {
     height: 31.25rem;
     object-fit: cover;
     filter: brightness(0.5);
-}
-
-@media (max-width:991px) {
-    .carrousel-hidden {
-        display: none;
-    }
 }
 
 .carousel-caption {
@@ -107,17 +111,33 @@ a {
     text-align: center;
 }
 
-@media (max-width: 482px) {
-    .carousel-title {
-        font-size: 2.5rem;
-    }
-
-    .carousel-desc {
-        font-size: 1.2rem;
-    }
-
+@media (max-width: 992px) {
     .carousel-caption {
-        margin-top: 11rem;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 516px) {
+    .carousel-caption {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 482px) {
+    .carousel-caption {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .carousel-desc {
+        font-size: 1.3rem;
     }
 }
 
@@ -131,7 +151,7 @@ a {
     }
 
     .carousel-caption {
-        margin-top: 12rem;
+        margin-top: 6rem;
     }
 }
 
@@ -156,7 +176,7 @@ a {
 }
 
 .hero-bottom {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .hero-heading {
@@ -327,7 +347,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    row-gap: 4rem;
+    row-gap: 2rem;
     flex-wrap: wrap;
 }
 
@@ -360,6 +380,7 @@ a {
     .novedades-cards {
         justify-content: center;
         gap: 6.25rem;
+        row-gap: 2.5rem;
     }
 
     .card {
@@ -367,7 +388,6 @@ a {
     }
 
 }
-
 
 @media (max-width: 1198px) {
     .card {
@@ -377,19 +397,215 @@ a {
 
 @media (max-width: 991px) {
     .card {
-        width: 100%;
+        width: 75%;
     }
+
+    .ultimos-productos-heading,
+    .ultimos-productos-text {
+        text-align: center;
+    } 
+
+}
+
+/* Equipos slider */
+
+#equipos-slider {
+    background-color: black;
+}
+
+.equipos-heading {
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    padding: 2rem 0;
+}
+
+.equipos-logo {
+    object-fit: cover;
 }
 
 /* Seccion starset */
 
 .starset {
     background-color: white;
-    height: 31.25rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    overflow: hidden;
+    gap: 3rem;
 }
 
 .starset-bottom-index-img {
+    height: 40rem;
     object-fit: cover;
+}
+
+.starset p {
+    max-width: 500px;
+}
+
+@media (max-width: 1398px) {
+    .starset-bottom-index-img {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 1198px) {
+    .starset-bottom-index-img {
+        height: 25rem;
+    }
+
+    .starset {
+        gap: 1rem;
+    }
+
+    .starset p {
+        max-width: 450px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .starset p {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .starset-bottom-index-img {
+        height: 20rem;
+    }    
+}
+
+@media (max-width: 768px) {
+    .starset {
+        height: 30rem;
+        flex-wrap: wrap;
+    }
+
+    .starset-bottom-index-img {
+        margin-top: 1rem;   
+    }
+
+    .starset p {
+        max-width: 400px;
+        text-align: center;
+    }
+}
+ 
+/* Starset link */
+
+.starset-link {
+    width: 100%;
+}
+
+.starset-link-body {
+    background-image: url(../assets/starset-link.png);
+    height: 20rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+    row-gap: 5px;
+}
+
+.starset-link-title {
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.starset-link-text {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.starset-link-text, 
+.starset-link-title,
+.starset-link-email {
+    padding-left: 60px;
+}
+
+.starset-link-email {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+.starset-link-input {
+    border-radius: 30px;
+    padding: 0 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.btn-success {
+    border-radius: 30px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1398px) {
+   .starset-link-email {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .starset-link-body {
+    flex-wrap: wrap;
+   }
+
+   .starset-link-input {
+    width: 100%;
+   }
+
+}
+
+@media (max-width: 991px) {
+    .starset-link-title {
+        font-size: 2.5rem;
+    }
+
+    .starset-link-text {
+        font-size: 1.8rem;
+    }
+
+    .starset-link-text, 
+    .starset-link-title,
+    .starset-link-email {
+        padding-left: 0;
+    }
+
+    .starset-link-text,
+    .starset-link-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .starset-link-body {
+        height: 30rem;
+    }
+
+    .starset-link-email {
+        width: 90%;
+        align-self: center;
+    }
+
 }
 
 /* footer */
@@ -448,11 +664,13 @@ a {
 .footer-bottom-item {
     font-size: 30px;
     margin-bottom: 4rem;
-    color:rgb(83, 83, 83)
+    color:rgb(83, 83, 83);
+    cursor: pointer;
 }
 
 .footer-bottom-title {
     margin-bottom: 2rem;
+    text-transform: capitalize;
 }
 
 .footer-main-item, .footer-bottom-item {
@@ -474,4 +692,47 @@ a {
 
 .copyright {
     color: rgb(83, 83, 83);
+}
+
+@media (max-width: 991px) {
+    .footer {
+        height: 60rem;
+    }
+
+    .footer-main {
+        gap: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        gap: 3rem;
+        align-items: baseline;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .descargas__ul {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        height: 78rem;
+    }
+
+    .footer-main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 334px) {
+    .footer-bottom-item {
+        font-size: 25px;
+    }
+    
+    .w-us {
+        gap: 30px;
+    }
 }
