@@ -898,8 +898,13 @@ a {
         height: 78rem;
     }
 
+    .breadcrumb {
+        display: flex;
+    }
+
     .footer-main {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
