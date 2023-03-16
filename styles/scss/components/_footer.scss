@@ -1,0 +1,132 @@
+/* Footer */
+
+.footer {
+    background-color: white;
+    font-size: 23px;
+    height: 53rem;
+}
+
+.productos__ul,
+.soporte__ul,
+.descargas__ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.w-us {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 13rem;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.footer-main-title {
+    font-size: 23px;
+    margin-bottom: 1rem;
+}
+
+.footer-main-item {
+    margin-top: 3rem;
+    color: rgb(119, 119, 119);
+}
+
+.breadcrumb {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer-bottom-item {
+    font-size: 30px;
+    margin-bottom: 4rem;
+    color:rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+.footer-bottom-title {
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+.footer-main-item, .footer-bottom-item {
+    transition-duration: 500ms;
+    &:hover {
+        color: black;
+    }
+}
+
+.footer-bottom {
+    border-bottom: 1px solid #ededed;
+}
+
+.footer-copyright {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.copyright {
+    color: rgb(83, 83, 83);
+}
+
+@media (max-width: 991px) {
+    .footer {
+        height: 60rem;
+    }
+
+    .footer-main {
+        gap: 9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main {
+        gap: 3rem;
+        align-items: baseline;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .descargas__ul {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        height: 78rem;
+    }
+
+    .breadcrumb {
+        display: flex;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 334px) {
+    .footer-bottom-item {
+        font-size: 25px;
+    }
+    
+    .w-us {
+        gap: 30px;
+    }
+}

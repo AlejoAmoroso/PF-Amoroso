@@ -1,0 +1,144 @@
+// Starset experience y hover effect
+
+// Mixin para generar el gradient y la animacion
+
+@mixin starsetExperienceGradient ($gradientcolor1, $gradientcolor2, $gradientcolor3) {
+    background: linear-gradient(130deg, transparent 0% 33%, $gradientcolor1, $gradientcolor2, $gradientcolor3);
+    background-position: 0% 0%;
+    background-size: 300% 300%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    transition: background-position 500ms ease
+}
+
+.starset-experience {
+    background-color: black;
+    border: 4px solid rgb(26, 163, 255);
+    height: 30rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+// Gradients
+
+.index-gradient:before {
+    @include starsetExperienceGradient(rgba(245,255,0,1) 66%, rgba(255,0,185,1) 83.5%, rgba(68,0,255,1) 100%);
+}
+
+.productos-gradient:before {
+    @include starsetExperienceGradient(rgba(55,255,148,1) 66%, rgba(89,218,255,1) 83.5%, rgba(0,104,255,1) 100%);
+}
+
+.nosotros-gradient:before {
+    @include starsetExperienceGradient(rgba(255,0,99,1) 66%, rgba(255,0,159,1) 83.5%, rgba(214,0,255,1) 100%);
+}
+
+
+.starset-experience:hover:before {
+    background-position: 100% 100%;
+}
+
+// Animacion del fondo
+
+.starset-experience-content {
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.2) 8%,
+        transparent 8%
+    );
+    background-size: 5vmin 5vmin;
+    transition: background-position 350ms ease;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.starset-experience:hover > .starset-experience-content {
+    background-position: -10% 0%;
+}
+
+.starset-experience-title, 
+.starset-experience-text {
+    color: white;
+    text-align: center;
+}
+
+.starset-experience-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 6rem;
+    margin-top: 5rem;
+}
+
+.starset-experience-text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 0 60px;
+
+}
+
+.starset-experience-subtitle {
+    display: inline-block;
+    margin: 0;
+    opacity: 0;
+    position: relative;
+    transform: translateY(40%);
+    transition: none;
+}
+
+// Animacion del texto
+
+.starset-experience:hover > .starset-experience-content > .starset-experience-body > .starset-experience-text > .starset-experience-subtitle {
+    transform: translateY(0%);
+    transition: 300ms linear;
+    opacity: 1;
+}
+ 
+@media (max-width: 768px) {
+    .starset-experience-title {
+        margin-top: 1rem;
+        font-size: 5.3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .starset-experience-title {
+        font-size: 5.5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 466px) {
+    .starset-experience-title {
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 356px) {
+    .starset-experience-text {
+        font-size: 1.3rem;
+        padding: 0 30px;
+    }
+    .starset-experience-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 281px) {
+    .starset-experience-title {
+        font-size: 3.5rem;
+    }
+}

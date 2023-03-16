@@ -1,0 +1,171 @@
+/* Contacto */
+
+.contacto-form-container {
+    background-color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.contacto-form-grid {
+    display: grid;
+    grid-template-areas: 
+    "nombre apellido"
+    "nombre-input apellido-input"
+    "email email"
+    "email-input email-input"
+    "categoria producto"
+    "categoria-input producto-input"
+    "compraste compraste"
+    "compraste-input compraste-input"
+    "consulta consulta"
+    "consulta-input consulta-input"
+    "proveer proveer"
+    "submit submit";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    column-gap: 2.5rem;
+    width: 100%;
+}
+
+.label-nombre {
+    grid-area: nombre;
+}
+
+.input-nombre {
+    grid-area: nombre-input;
+}
+
+.label-apellido {
+    grid-area: apellido;
+}
+
+.input-apellido {
+    grid-area: apellido-input;
+}
+
+.label-email {
+    grid-area: email;
+}
+
+.input-email {
+    grid-area: email-input;
+}
+
+.label-categoria {
+    grid-area: categoria;
+}
+
+.input-categoria {
+    grid-area: categoria-input;
+    font-size: 1rem;
+    color: gray;
+}
+
+.label-producto {
+    grid-area: producto;
+}
+
+.input-producto {
+    grid-area: producto-input;
+}
+
+.label-compraste {
+    grid-area: compraste;
+}
+
+.compraste-input-container {
+    grid-area: compraste-input;
+}
+
+.input-compraste-no {
+    margin-left: 2rem;
+}
+
+.label-consulta {
+    grid-area: consulta;
+}
+
+.input-consulta {
+    grid-area: consulta-input;
+    height: 10rem;
+    text-align: start;
+    padding: 15px 15px;
+}
+
+.proveer {
+    grid-area: proveer;
+}
+
+.input-submit {
+    grid-area: submit;
+}
+
+.form-items-heading {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.form-input {
+    height: 3rem;
+    padding: 0 15px;
+}
+
+.submit-btn {
+    width: 30%;
+    height: 3rem;
+    font-size: 1.2rem;
+}
+
+.contacto-form-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .contacto-form-grid {
+        display: grid;
+        grid-template-areas: 
+        "nombre" 
+        "nombre-input"
+        "apellido" 
+        "apellido-input"
+        "email"
+        "email-input"
+        "categoria" 
+        "categoria-input" 
+        "producto"
+        "producto-input"
+        "compraste"
+        "compraste-input"
+        "consulta"
+        "consulta-input"
+        "proveer"
+        "submit";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 1rem;
+        column-gap: 2.5rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 378px) {
+    .contacto-form-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 314px) {
+    .form-input {
+        width: 95%;
+    }
+    
+    .submit-btn {
+        width: 50%;
+        font-size: 1rem;
+    }
+}

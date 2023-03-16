@@ -1,0 +1,67 @@
+/* Productos */
+
+.productos-carousel-img {
+    height: 31.25rem;
+    filter: brightness(0.6);
+    object-fit: cover;
+}
+
+.productos-caption-heading {
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.productos-title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.productos-desc {
+    font-size: 1.2rem;
+    line-height: 1px;
+}
+
+.linea-gaming-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 2;
+}
+
+.productos-cards-item {
+    position: relative;
+}
+
+.productos-cards-img {
+    height: 25rem;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.productos-info {
+    height: 25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    opacity: 0;
+    cursor: pointer;
+    transition: linear 500ms;
+    &:hover {
+        opacity: 1;
+    }
+}

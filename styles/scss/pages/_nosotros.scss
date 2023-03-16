@@ -1,0 +1,183 @@
+/* Sobre nosotros */
+
+.nosotros-heading {
+    font-weight: 400;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.nosotros-desc {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(119, 119, 119);
+}
+
+.nosotros-mid-img {
+    background-image: url(../assets/about-us/about-us-top.png);
+    height: 31.25rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    display: flex;
+}
+
+.nosotros-mid-img i {
+    color: white;
+    margin: 29rem auto;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nosotros-card-img {
+    object-fit: cover;
+    height: 31.25rem;
+    filter: grayscale(100%);
+}
+
+/* 
+.nosotros-card {
+    background-color: white;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 2rem;
+} */
+
+.nosotros-card-desc {
+    background-color: white;
+    height: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.nosotros-card-text {
+    font-size: 1rem;
+    max-width: 550px;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+.nosotros-card-heading {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    text-align: start;
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .nosotros-card-text {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 475px) {
+    .nosotros-card-heading {
+        font-size: 1.5rem;
+    }
+
+    .nosotros-card-text {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 359px) {
+    .nosotros-card-desc {
+        height: 35rem;
+    }
+
+    .nosotros-card-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .nosotros-card-text {
+        max-width: 200px;
+    }
+}
+
+.artistas-img {
+    background-image: url(../assets/about-us/about-us-artist.jpg.png);
+    height: 31.25rem;
+    background-size: cover;
+    background-position: 40% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.artistas-heading {
+    font-size: 2.5rem;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.artistas-text {
+    font-size: 1rem;
+    color: white;
+    padding-top: 1rem;
+    max-width: 600px;
+    line-height: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .artistas-text {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 578px) {
+    .artistas-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 476px) {
+    .artistas-img {
+        height: 40rem;
+    }
+    
+    .artistas-text {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 376px) {
+    .artistas-img {
+        height: 40rem;
+        padding-left: 0rem;
+        align-items: center;
+    }
+
+    .artistas-heading {
+        text-align: center;
+    }
+    
+    .artistas-text {
+        max-width: 250px;
+        text-align: center;
+    }
+
+}
+
+.mapa-heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.nosotros-iframe {
+    filter: grayscale(100%)
+}
