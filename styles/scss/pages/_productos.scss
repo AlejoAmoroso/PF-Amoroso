@@ -19,7 +19,6 @@
 
 .productos-desc {
     font-size: 1.2rem;
-    line-height: 1px;
 }
 
 .linea-gaming-cards {
@@ -64,4 +63,69 @@
     &:hover {
         opacity: 1;
     }
+}
+
+// Queries
+
+@media (max-width: 991px) {
+    .productos-caption-heading {
+        margin-top: 7.5rem;
+    }
+
+    .productos-desc {
+        max-width: 1000px;
+        text-align: center;
+    }
+
+    .productos-title {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-caption-heading {
+        font-size: 2.5rem;
+        margin-top: 12.6rem; 
+    }
+} 
+
+@media (max-width: 400px) {
+    .productos-cards-img {
+        height: 20rem;
+    }
+    
+   .productos-info {
+    height: 20rem;
+   }
+}
+
+@media (max-width: 382px) {
+    .productos-caption-heading {
+        margin-top: 7rem;
+   }
+}
+
+@media (max-width: 324px) {
+    .productos-cards-img {
+        height: 18rem;
+    }
+    
+   .productos-info {
+    height: 18rem;
+   }
+}
+
+@media (max-width: 314px) {
+    .productos-cards-img {
+        height: 15rem;
+    }
+    
+   .productos-info {
+    height: 15rem;
+   }
+
+   .productos-caption-heading {
+    margin-top: 10.5rem;
+    font-size: 1.5rem;
+   }
 }

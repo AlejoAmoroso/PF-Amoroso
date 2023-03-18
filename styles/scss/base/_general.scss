@@ -1,9 +1,11 @@
 /* General */
 
+$bodybackgroundcolor: #e9ecef;
+
 body {
     font-family: 'Jost', sans-serif;
     font-size: 20px;
-    background-color: #e9ecef;
+    background-color: $bodybackgroundcolor;
     font-weight: 400;
 }
 

@@ -36,6 +36,7 @@ textarea {
 
 .nav-link {
   margin-left: 100px;
+  position: relative;
 }
 .nav-link:hover {
   color: rgb(0, 0, 0);
@@ -49,6 +50,22 @@ textarea {
 .navbar-top {
   background-color: black;
   color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transition: 500ms ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 @media (max-width: 991px) {
@@ -111,6 +128,7 @@ textarea {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: letter-spacing 0.5s ease;
 }
 
 .index-gradient:before {
@@ -124,7 +142,7 @@ textarea {
   top: 0px;
   width: 100%;
   z-index: 1;
-  transition: background-position 500ms ease;
+  transition: background-position 500ms ease, box-shadow 1000ms ease;
 }
 
 .productos-gradient:before {
@@ -138,7 +156,7 @@ textarea {
   top: 0px;
   width: 100%;
   z-index: 1;
-  transition: background-position 500ms ease;
+  transition: background-position 500ms ease, box-shadow 1000ms ease;
 }
 
 .nosotros-gradient:before {
@@ -152,11 +170,44 @@ textarea {
   top: 0px;
   width: 100%;
   z-index: 1;
-  transition: background-position 500ms ease;
+  transition: background-position 500ms ease, box-shadow 1000ms ease;
+}
+
+.descargas-gradient:before {
+  background: linear-gradient(130deg, transparent 0% 33%, hsl(154, 100%, 76%) 66%, hsl(234, 100%, 83%) 83.5%, hsl(288, 100%, 81%) 100%);
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  transition: background-position 500ms ease, box-shadow 1000ms ease;
+}
+
+.contacto-gradient:before {
+  background: linear-gradient(130deg, transparent 0% 33%, hsl(43, 84%, 85%) 66%, hsl(325, 71%, 70%) 83.5%, hsl(236, 67%, 55%) 100%);
+  background-position: 0% 0%;
+  background-size: 300% 300%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  transition: background-position 500ms ease, box-shadow 1000ms ease;
+}
+
+.starset-experience:hover {
+  letter-spacing: 5px;
 }
 
 .starset-experience:hover:before {
   background-position: 100% 100%;
+  box-shadow: 0 0 80px rgb(26, 163, 255);
 }
 
 .starset-experience-content {
@@ -193,6 +244,7 @@ textarea {
   font-weight: 300;
   font-size: 1.5rem;
   padding: 0 60px;
+  letter-spacing: 0.5px;
 }
 
 .starset-experience-subtitle {
@@ -1141,7 +1193,6 @@ textarea {
 
 .productos-desc {
   font-size: 1.2rem;
-  line-height: 1px;
 }
 
 .linea-gaming-cards {
@@ -1188,6 +1239,57 @@ textarea {
   opacity: 1;
 }
 
+@media (max-width: 991px) {
+  .productos-caption-heading {
+    margin-top: 7.5rem;
+  }
+  .productos-desc {
+    max-width: 1000px;
+    text-align: center;
+  }
+  .productos-title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .productos-caption-heading {
+    font-size: 2.5rem;
+    margin-top: 12.6rem;
+  }
+}
+@media (max-width: 400px) {
+  .productos-cards-img {
+    height: 20rem;
+  }
+  .productos-info {
+    height: 20rem;
+  }
+}
+@media (max-width: 382px) {
+  .productos-caption-heading {
+    margin-top: 7rem;
+  }
+}
+@media (max-width: 324px) {
+  .productos-cards-img {
+    height: 18rem;
+  }
+  .productos-info {
+    height: 18rem;
+  }
+}
+@media (max-width: 314px) {
+  .productos-cards-img {
+    height: 15rem;
+  }
+  .productos-info {
+    height: 15rem;
+  }
+  .productos-caption-heading {
+    margin-top: 10.5rem;
+    font-size: 1.5rem;
+  }
+}
 /* Footer */
 .footer {
   background-color: white;
