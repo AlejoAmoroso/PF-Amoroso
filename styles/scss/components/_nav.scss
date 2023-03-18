@@ -49,6 +49,11 @@
     .nav-link {
         margin-left: 0;
     }
+
+    .nav-link:hover::after {
+        transform: scaleX(0.2);
+    }
+    
 }
 
 @media (max-width:1201px) {
