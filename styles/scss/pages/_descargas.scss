@@ -1,16 +1,18 @@
 /* Descargas */
 
+$bordercolor: #d2d2d2;
+
 .drivers {
     background-color: white;
     padding-left: 4rem;
     padding-right: 4rem;
-    height: 25rem;
+    height: 27rem;
     padding-top: 1rem;
 }
 
 .drivers-heading {
     display: block;
-    border-bottom: 0.1px solid #ededed;
+    border-bottom: 0.1px solid $bordercolor;
     font-size: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;
@@ -37,6 +39,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    border-left: 0.1px solid $bordercolor;
+    padding-left: 7rem;
 }
 
 .download-btn {
@@ -58,7 +62,14 @@
 
 .firmware-link {
     text-decoration: underline;
-    color: blue;
+    color: blue
+}
+
+@media (max-width: 1198px) {
+    .drivers-download-btn {
+        border-left: none;
+        padding-left: 0rem;
+    }
 }
 
 @media (max-width: 992px) {
@@ -67,25 +78,44 @@
         align-items: center;
         justify-content: center;
     }
+
+    .drivers {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .drivers {
+        height: 35rem;
+        text-align: center;
+    }
 }
 
 @media (max-width: 482px) {
     .drivers {
-        height: 30rem;
+        height: 37rem;
     }
 }
 
 @media (max-width: 342px) {
     .drivers {
         height: 40rem;
+        text-align: center;
+        font-size: 1rem;
     }
-    
+
     .firmware-link {
         text-align: center;
+    }
+    
+    .firmware-version {
+        font-size: 0.7rem;
     }
 
     .for-windows {
         text-align: center;
+        font-size: 0.7rem;
     }
 
     .drivers-version {

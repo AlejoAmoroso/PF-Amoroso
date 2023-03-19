@@ -252,19 +252,11 @@
 
 /* Novedades */
 
+
 .ultimos-productos {
     font-size: 60px;
     text-transform: capitalize;
 }
-
-/* .novedades-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    grid-template-rows: auto;
-    object-fit: contain;
-    gap: 10rem;
-} */
 
 .novedades-cards {
     display: flex;
@@ -289,18 +281,47 @@
 .card {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     width: 25rem;
-    transition-property: transform;
     background-color: black;
     color: white;
     border: transparent;
+    transition: 500ms;
     &:hover {
         cursor: pointer;
-        transform: scale(1.1, 1.1);
-        filter: grayscale(0%);
+        transform: scale(1.05, 1.05);
     }
 }
 
+// box shadow mixin
 
+@mixin cardBoxShadow ($boxshadowcolor, $bordercolor) {
+    box-shadow: 0 0 80px $boxshadowcolor;
+    border: 2.7px solid $bordercolor;
+}
+
+// card box shadow animacion
+.kitty-box-shadow:hover {
+    @include cardBoxShadow(#fec4dc, #fec4dc);
+}
+
+.gem-box-shadow:hover {
+    @include cardBoxShadow(#e08aff, #e08aff);
+}
+
+.icy-box-shadow:hover {
+    @include cardBoxShadow(#acd6dc, #acd6dc);
+}
+
+.greenfold-box-shadow:hover {
+    @include cardBoxShadow(#117e4b, #117e4b);
+}
+
+.bluewing-box-shadow:hover {
+    @include cardBoxShadow(#204471, #204471);
+}
+
+.pinkdemon-box-shadow:hover {
+    @include cardBoxShadow(#c93e77, #c93e77);
+}
 
 @media (max-width: 1398px) {
     .novedades-cards {
@@ -335,7 +356,7 @@
 
 /* Equipos slider */
 
-#equipos-slider {
+#equipos-slider-section {
     background-color: black;
 }
 
