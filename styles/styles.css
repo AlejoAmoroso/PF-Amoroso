@@ -562,7 +562,6 @@ textarea {
 .card-img-top,
 .card {
   filter: grayscale(100%);
-  transition-duration: 500ms;
 }
 .card-img-top:hover,
 .card:hover {
@@ -575,7 +574,7 @@ textarea {
   background-color: black;
   color: white;
   border: transparent;
-  transition: 500ms;
+  transition: box-shadow 500ms ease, transform 500ms ease, border 150ms ease-in-out, filter 500ms ease-in-out;
 }
 .card:hover {
   cursor: pointer;
@@ -584,32 +583,32 @@ textarea {
 
 .kitty-box-shadow:hover {
   box-shadow: 0 0 80px #fec4dc;
-  border: 2.7px solid #fec4dc;
+  border: 2px solid #fec4dc;
 }
 
 .gem-box-shadow:hover {
   box-shadow: 0 0 80px #e08aff;
-  border: 2.7px solid #e08aff;
+  border: 2px solid #e08aff;
 }
 
 .icy-box-shadow:hover {
   box-shadow: 0 0 80px #acd6dc;
-  border: 2.7px solid #acd6dc;
+  border: 2px solid #acd6dc;
 }
 
 .greenfold-box-shadow:hover {
   box-shadow: 0 0 80px #117e4b;
-  border: 2.7px solid #117e4b;
+  border: 2px solid #117e4b;
 }
 
 .bluewing-box-shadow:hover {
   box-shadow: 0 0 80px #204471;
-  border: 2.7px solid #204471;
+  border: 2px solid #204471;
 }
 
 .pinkdemon-box-shadow:hover {
   box-shadow: 0 0 80px #c93e77;
-  border: 2.7px solid #c93e77;
+  border: 2px solid #c93e77;
 }
 
 @media (max-width: 1398px) {
@@ -704,12 +703,12 @@ textarea {
     height: 30rem;
     flex-wrap: wrap;
   }
-  .starset-bottom-index-img {
-    margin-top: 1rem;
-  }
   .starset p {
     max-width: 400px;
     text-align: center;
+  }
+  .starset-bottom-index-img {
+    margin-top: 1rem;
   }
 }
 @media (max-width: 444px) {
@@ -726,11 +725,11 @@ textarea {
   }
 }
 @media (max-width: 290px) {
-  .starset p {
-    max-width: 200px;
-  }
   .starset {
     height: 35rem;
+  }
+  .starset p {
+    max-width: 200px;
   }
 }
 /* Starset link */
@@ -1385,6 +1384,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-transform: uppercase;
 }
 
 .w-us {
@@ -1431,7 +1431,7 @@ textarea {
 
 .footer-bottom-title {
   margin-bottom: 2rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .footer-main-item, .footer-bottom-item {

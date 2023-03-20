@@ -272,7 +272,6 @@
 .card
  {
     filter: grayscale(100%);
-    transition-duration: 500ms;
     &:hover {
         filter: grayscale(0%);
     }
@@ -284,7 +283,7 @@
     background-color: black;
     color: white;
     border: transparent;
-    transition: 500ms;
+    transition: box-shadow 500ms ease, transform 500ms ease, border 150ms ease-in-out, filter 500ms ease-in-out;
     &:hover {
         cursor: pointer;
         transform: scale(1.05, 1.05);
@@ -295,7 +294,7 @@
 
 @mixin cardBoxShadow ($boxshadowcolor, $bordercolor) {
     box-shadow: 0 0 80px $boxshadowcolor;
-    border: 2.7px solid $bordercolor;
+    border: 2px solid $bordercolor;
 }
 
 // card box shadow animacion
@@ -406,11 +405,10 @@
 
     .starset {
         gap: 1rem;
-    }
-
-    .starset p {
-        max-width: 450px;
-        font-size: 1rem;
+        p {
+            max-width: 450px;
+            font-size: 1rem;
+        }
     }
 }
 
@@ -429,16 +427,16 @@
     .starset {
         height: 30rem;
         flex-wrap: wrap;
+        p {
+            max-width: 400px;
+            text-align: center;
+        }
     }
 
     .starset-bottom-index-img {
         margin-top: 1rem;   
     }
 
-    .starset p {
-        max-width: 400px;
-        text-align: center;
-    }
 }
 
 @media (max-width: 444px) {
@@ -458,12 +456,11 @@
 }
 
 @media (max-width: 290px) {
-    .starset p {
-        max-width: 200px;
-    }
-
     .starset {
         height: 35rem;
+        p {
+            max-width: 200px;
+        }
     }
 }
 
