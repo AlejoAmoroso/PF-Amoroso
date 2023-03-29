@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .w-us {
@@ -61,7 +61,7 @@
 
 .footer-bottom-title {
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .footer-main-item, .footer-bottom-item {
@@ -100,6 +100,13 @@
         align-items: baseline;
         align-content: center;
         justify-content: flex-start;
+    }
+
+    .breadcrumb {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        padding-left: 0;
     }
 
     .descargas__ul {

@@ -45,6 +45,7 @@ textarea {
 .navbar {
   font-size: 1.4rem;
   font-weight: 400;
+  background-color: #e9ecef;
 }
 
 .navbar-top {
@@ -95,7 +96,7 @@ textarea {
   background-color: var(--bs-navbar-color);
   display: block;
   position: absolute;
-  transition: 350ms ease-in-out;
+  transition: 400ms ease-in-out;
   border-radius: 20px;
   opacity: 1;
   left: 0;
@@ -1162,6 +1163,10 @@ textarea {
   .drivers {
     text-align: center;
   }
+  .drivers-list__ul {
+    margin-top: 2rem;
+    padding-left: 0;
+  }
 }
 @media (max-width: 768px) {
   .drivers {
@@ -1173,10 +1178,14 @@ textarea {
   .drivers {
     height: 37rem;
   }
+  .drivers-list-item {
+    list-style: none;
+    text-transform: uppercase;
+  }
 }
 @media (max-width: 342px) {
   .drivers {
-    height: 40rem;
+    height: 35rem;
     text-align: center;
     font-size: 1rem;
   }
@@ -1417,6 +1426,11 @@ textarea {
     margin-top: 12.6rem;
   }
 }
+@media (max-width: 440px) {
+  .productos-caption-heading {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 400px) {
   .productos-cards-img {
     height: 20rem;
@@ -1428,6 +1442,12 @@ textarea {
 @media (max-width: 382px) {
   .productos-caption-heading {
     margin-top: 7rem;
+  }
+}
+@media (max-width: 350px) {
+  .productos-caption-heading {
+    font-size: 1.6rem;
+    margin-top: 7.5rem;
   }
 }
 @media (max-width: 324px) {
@@ -1465,7 +1485,7 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .w-us {
@@ -1512,7 +1532,7 @@ textarea {
 
 .footer-bottom-title {
   margin-bottom: 2rem;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .footer-main-item, .footer-bottom-item {
@@ -1549,6 +1569,12 @@ textarea {
     align-items: baseline;
     align-content: center;
     justify-content: flex-start;
+  }
+  .breadcrumb {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding-left: 0;
   }
   .descargas__ul {
     margin-left: 0;

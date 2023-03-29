@@ -19,6 +19,7 @@
 .navbar {
     font-size: 1.4rem;
     font-weight: 400;
+    background-color: #e9ecef;
 }
 
 .navbar-top {
@@ -73,7 +74,7 @@
     background-color: var(--bs-navbar-color);
     display: block;
     position: absolute;
-    transition: 350ms ease-in-out;
+    transition: 400ms ease-in-out;
     border-radius: 20px;
     opacity: 1;
     left: 0;

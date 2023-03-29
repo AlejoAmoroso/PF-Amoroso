@@ -83,6 +83,11 @@ $bordercolor: #d2d2d2;
         text-align: center;
     }
 
+    .drivers-list__ul {
+        margin-top: 2rem;
+        padding-left: 0;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -96,11 +101,15 @@ $bordercolor: #d2d2d2;
     .drivers {
         height: 37rem;
     }
+    .drivers-list-item {
+        list-style: none;
+        text-transform: uppercase;
+    }
 }
 
 @media (max-width: 342px) {
     .drivers {
-        height: 40rem;
+        height: 35rem;
         text-align: center;
         font-size: 1rem;
     }
