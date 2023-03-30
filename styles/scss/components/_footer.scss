@@ -6,6 +6,10 @@
     height: 53rem;
 }
 
+.footerbackground {
+    background-color: white;
+}
+
 .productos__ul,
 .soporte__ul,
 .descargas__ul {
@@ -127,6 +131,19 @@
         flex-direction: column;
         flex-wrap: wrap;
     }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .w-us {
+        justify-content: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 334px) {
