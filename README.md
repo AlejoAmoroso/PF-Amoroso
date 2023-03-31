@@ -27,4 +27,4 @@ Levantar un servidor virtual local
 
     open in live server
 ## Deploy
-Sitio en [Github Pages](https://alejoamoroso.github.io/starset/).
+Sitio en [Github Pages](https://alejoamoroso.github.io/PF-Amoroso).
